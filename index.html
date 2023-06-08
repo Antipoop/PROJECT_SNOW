@@ -6,7 +6,9 @@
   <body>
     <p>Prototype 20</p>
     <img id="image" src="prototype/1.jpg">
+    <div class="touch">
     <button onclick="nextImg(); fullScreen(fullScreenGame)">Touch me</button>
+  </div>
     <script>
       let i = 0;
       const image = document.getElementById("image");
@@ -50,6 +52,10 @@
     button {
       background-color:greenyellow;
       color: black;
+    }
+    .touch {
+      display: flex;	
+  justify-content: center;
     }
   </style>
   </head> 
