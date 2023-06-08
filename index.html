@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <p>Prototype 18</p>
+    <p>Prototype 19</p>
     <img id="image" src="prototype/1.jpg">
-    <button onclick="nextImg();">Touch me</button>
+    <button onclick="nextImg(); fullScreen(fullScreenGame)">Touch me</button>
     <script>
       let i = 0;
       const image = document.getElementById("image");
@@ -18,37 +18,29 @@
         }
       }
     </script>
+    <script>
+      const fullScreen = (element) => {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.webkitrequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.mozRequestFullscreen) {
+          element.mozRequestFullScreen();
+        }
+      }
+      const fullScreenGame = document.getElementById('image');
+    </script>
   <style>
     img {
-      object-fit: contain;
-      height: max-content;
-      width: inherit;
       pointer-events: none;
-      padding-left: 50%;
-      padding-right: 50%;
-      padding-top: 10%;
-      margin-left: 0px;
-      margin-right: 0px;
     }
     body {
-      height:auto;
-      width:60%;
-      padding-left: 0px;
-      margin: 0;
-      padding-right: 0px;
       background-color: black;
     }
     p {
       color:aqua;
-      margin-top: 0px;
-      margin-bottom: 0px;
     }
     button {
-      padding-right: 100px;
-      padding-left: 100px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      margin-left: 100%;
       background-color:greenyellow;
       color: black;
     }
