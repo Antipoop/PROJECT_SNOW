@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <p>Prototype 23</p>
-    <div id="image">
-      <img src="prototype/1.jpg">
+    <p>Prototype 24</p>
+    <div id="view">
+      <img id="image" src="prototype/1.jpg">
       <div class="touch">
         <button onclick="nextImg(); fullScreen(fullScreenGame)">Touch me</button>
       </div>
@@ -32,7 +32,7 @@
           element.mozRequestFullScreen();
         }
       }
-      const fullScreenGame = document.getElementById('image');
+      const fullScreenGame = document.getElementById('view');
     </script>
   <style>
     img {
