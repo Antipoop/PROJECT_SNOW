@@ -3,10 +3,11 @@
   <head>
   <meta charset="UTF-8">
   <title>Prototype</title>
+  </head>
   <body>
-    <p>Prototype 15</p>
+    <p>Prototype 16</p>
     <img id="image" src="prototype/1.jpg">
-    <button onclick="nextImg();">Touch me</button>
+    <button onclick="nextImg(); fullScreen(fullScreenGame)">Touch me</button>
     <script>
       let i = 0;
       const image = document.getElementById("image");
@@ -17,6 +18,18 @@
           image.src = images[i];
         }
       }
+    </script>
+    <script>
+      const fullScreen = (element) => {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.webkitrequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.mozRequestFullscreen) {
+          element.mozRequestFullScreen();
+        }
+      }
+      const fullScreenGame = document.getElementById('image');
     </script>
   <style>
     img {
@@ -53,6 +66,5 @@
       color: black;
     }
   </style>
-  </head> 
   </body>
 </html>
