@@ -4,8 +4,17 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <p>Prototype 13</p>
-    <img src="prototype/1.jpg">
+    <p>Prototype 14</p>
+    <img id="image" src="prototype/1.jpg" onClick="nextImg();">
+    <script>
+      let i = 0;
+      const image = document.getElementById("image");
+      const images = ['prototype/1.jpg', 'prototype/2.jpg', 'prototype/3.jpg'];
+      const nextImg = () => {
+        i++;
+        image.src = images[i];
+      }
+    </script>
   <style>
     img {
       object-fit: contain;
