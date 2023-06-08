@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <p>Prototype 14</p>
-    <img id="image" src="prototype/1.jpg" onClick="nextImg();">
+    <p>Prototype 15</p>
+    <img id="image" src="prototype/1.jpg">
+    <button onclick="nextImg();">Touch me</button>
     <script>
       let i = 0;
       const image = document.getElementById("image");
       const images = ['prototype/1.jpg', 'prototype/2.jpg', 'prototype/3.jpg'];
       const nextImg = () => {
-        i++;
-        image.src = images[i];
+        if (i !== 2) {
+          i++;
+          image.src = images[i];
+        }
       }
     </script>
   <style>
@@ -39,6 +42,15 @@
       color:aqua;
       margin-top: 0px;
       margin-bottom: 0px;
+    }
+    button {
+      padding-right: 100px;
+      padding-left: 100px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-left: 100%;
+      background-color:greenyellow;
+      color: black;
     }
   </style>
   </head> 
