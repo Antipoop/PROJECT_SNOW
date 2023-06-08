@@ -3,11 +3,25 @@
   <head>
   <meta charset="UTF-8">
   <title>Prototype</title>
-  </head>
   <body>
-    <p>Prototype 16</p>
+    <p>Prototype 17</p>
     <img id="image" src="prototype/1.jpg">
-    <button onclick="nextImg(); fullScreen(fullScreenGame)">Touch me</button>
+    <picture>
+      <source media="(max-width: 799px)" srcset="prototype/1.jpg">
+      <source media="(min-width: 800px)" srcset="prototype/1.jpg">
+      <img src="prototype/1.jpg">
+    </picture>
+    <picture>
+      <source media="(max-width: 799px)" srcset="prototype/2.jpg">
+      <source media="(min-width: 800px)" srcset="prototype/2.jpg">
+      <img src="prototype/2.jpg">
+    </picture>
+    <picture>
+      <source media="(max-width: 799px)" srcset="prototype/3.jpg">
+      <source media="(min-width: 800px)" srcset="prototype/3.jpg">
+      <img src="prototype/3.jpg">
+    </picture>
+    <button onclick="nextImg();">Touch me</button>
     <script>
       let i = 0;
       const image = document.getElementById("image");
@@ -19,24 +33,11 @@
         }
       }
     </script>
-    <script>
-      const fullScreen = (element) => {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if(element.webkitrequestFullscreen) {
-          element.webkitRequestFullscreen();
-        } else if(element.mozRequestFullscreen) {
-          element.mozRequestFullScreen();
-        }
-      }
-      const fullScreenGame = document.getElementById('image');
-    </script>
   <style>
     img {
       object-fit: contain;
-      height: auto;
-      width: 100%;
-      max-width: 720px;
+      height: max-content;
+      width: inherit;
       pointer-events: none;
       padding-left: 50%;
       padding-right: 50%;
@@ -67,5 +68,6 @@
       color: black;
     }
   </style>
+  </head> 
   </body>
 </html>
