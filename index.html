@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <p>Prototype 25</p>
+    <p>Prototype 26</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       <div class="touch">
-        <button onclick="nextImg();">Touch me</button>
+        <button class="ex" onclick="exImg()">Ex</button>
+        <button class="next" onclick="nextImg();">Next</button>
       </div>
     <button onclick="fullScreen(fullScreenGame)" class="full">FullScreen</button>
     </div>
@@ -20,6 +21,12 @@
         if (i !== 2) {
           i++;
           image.src = images[i];
+        }
+      }
+      const exImg = () => {
+        if (i < 0) {
+          i--;
+          image.src= images[i]
         }
       }
     </script>
@@ -60,10 +67,16 @@
       width: 100%;
       height: 7vh;
     }
+    .ex {
+      top: 90%;
+      left: 10%;
+    }
+    .next {
+      top: 90%;
+      left: 90%;
+    }
     .touch {
       position:absolute;
-      top: 50%;
-      left:50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
