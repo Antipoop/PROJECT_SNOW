@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Prototype</title>
   <body>
-    <audio src="media/office.mp3" autoplay loop></audio>
-    <p>Prototype 34</p>
+    <audio id="office" src="media/office.mp3" loop></audio>
+    <p>Prototype 35</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       
       <div class="touch">
         <button class="ex" onclick="exImg()">Ex</button>
-        <button class="next" onclick="nextImg();">Next</button>
+        <button class="next" onclick="nextImg(); playOffice()">Next</button>
       </div>
     <button onclick="fullScreen(fullScreenGame)" class="full">FullScreen</button>
     </div>
@@ -43,6 +43,11 @@
         }
       }
       const fullScreenGame = document.getElementById('view');
+    </script>
+    <script>
+      const playOffice = () => {
+        document.getElementById('office').play()
+      }
     </script>
   <style>
     img {
