@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
   <head>
   <meta charset="UTF-8">
-  <title>Prototype 36</title>
+  <title>Prototype 37</title>
   <body>
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
@@ -44,10 +44,16 @@
       }
       const playAudio = () => {
         if (i === 0) {
+          audio.pause();
+          audio.currentTime = 0;
           playOffice()
         } else if (i === 1) {
+          audio.pause();
+          audio.currentTime = 0;
           playCorridor()
         } else if (i === 2) {
+          audio.pause();
+          audio.currentTime = 0;
           playParking()
         }
       }
