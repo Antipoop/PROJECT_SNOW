@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
   <head>
   <meta charset="UTF-8">
-  <title>Prototype 37</title>
+  <title>Prototype 38</title>
   <body>
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
@@ -12,8 +12,8 @@
       <img id="image" src="prototype/1.jpg">
       
       <div class="touch">
-        <button class="ex" onclick="exImg(); playAudio()">Ex</button>
-        <button class="next" onclick="nextImg(); playAudio()">Next</button>
+        <button class="ex" onclick="exImg(); stopAudio(); playAudio()">Ex</button>
+        <button class="next" onclick="nextImg(); stopAudio(); playAudio()">Next</button>
       </div>
     <button onclick="fullScreen(fullScreenGame)" class="full">FullScreen</button>
     </div>
@@ -44,18 +44,16 @@
       }
       const playAudio = () => {
         if (i === 0) {
-          audio.pause();
-          audio.currentTime = 0;
           playOffice()
         } else if (i === 1) {
-          audio.pause();
-          audio.currentTime = 0;
           playCorridor()
         } else if (i === 2) {
-          audio.pause();
-          audio.currentTime = 0;
           playParking()
         }
+      }
+      const stopAudio = () => {
+        audio.pause();
+        audio.currentTime = 0;
       }
     </script>
     <script>
