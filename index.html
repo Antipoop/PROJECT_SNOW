@@ -7,7 +7,7 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 43</p>
+    <p>Prototype 44</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       
@@ -21,39 +21,62 @@
       let i = 0;
       const image = document.getElementById("image");
       const images = ['prototype/1.jpg', 'prototype/2.jpg', 'prototype/3.jpg'];
+      const audioOffice = document.getElementById('office');
+      const audioCorridor = document.getElementById('corridor');
+      const audioParking = document.getElementById('parking');
       const playOffice = () => {
-        document.getElementById('office').play()
+        audioOffice.play()
       }
       const playCorridor = () => {
-        document.getElementById('corridor').play()
+        audioCorridor.play()
       }
       const playParking = () => {
-        document.getElementById('parking').play()
+        audioParking.play()
+      }
+      const stopOffice = () => {
+        audioOffice.pause()
+        audioOffice.currentTime = 0;
+      }
+      const stopCorridor = () => {
+        audioCorridor.pause()
+        audioCorridor.currentTime = 0;
+      }
+      const stopParking = () => {
+        audioParking.pause()
+        audioParking.currentTime = 0;
       }
       const next = () => {
-        i++;
-        image.src = images[i];
-        if (i === 0) {
-          playOffice()
-        } else if (i === 1) {
-          playCorridor()
-        } else if (i === 2) {
-          playParking()
+        if (i < images.length) {
+           i++;
+          image.src = images[i];
+          if (i === 0) {
+            playOffice()
+          } else if (i === 1) {
+            stopOffice()
+            playCorridor()
+          } else if (i === 2) {
+            stopCorridor()
+            playParking()
+          }
         }
       }
       const ex = () => {
-        i--;
-        if (i > 0) {
+        if (i !== 0) {
           i--;
-          image.src= images[i]
-        }
-        if (i === 0) {
-          playOffice()
-        } else if (i === 1) {
-          playCorridor()
-        } else if (i === 2) {
-          playParking()
-        }
+          if (i > 0) {
+            i--;
+            image.src= images[i]
+          }
+          if (i === 0) {
+            playOffice()
+            stopCorridor()
+          } else if (i === 1) {
+            stopParking()
+            playCorridor()
+          } else if (i === 2) {
+            playParking()
+          }
+          } 
       }
     </script>
     <script>
