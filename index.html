@@ -7,13 +7,13 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 42</p>
+    <p>Prototype 43</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       
       <div class="touch">
-        <button class="ex" onclick="exImg(); playAudio()">Ex</button>
-        <button class="next" onclick="nextImg(); playAudio()">Next</button>
+        <button class="ex" onclick="ex();">Ex</button>
+        <button class="next" onclick="next();">Next</button>
       </div>
     <button onclick="fullScreen(fullScreenGame)" class="full">FullScreen</button>
     </div>
@@ -30,21 +30,23 @@
       const playParking = () => {
         document.getElementById('parking').play()
       }
-      const nextImg = () => {
-        if (i !== 2) {
-          i++;
-          image.src = images[i];
+      const next = () => {
+        i++;
+        image.src = images[i];
+        if (i === 0) {
+          playOffice()
+        } else if (i === 1) {
+          playCorridor()
+        } else if (i === 2) {
+          playParking()
         }
       }
-      const exImg = () => {
+      const ex = () => {
+        i--;
         if (i > 0) {
           i--;
           image.src= images[i]
         }
-      }
-      const playAudio = () => {
-        audio.pause();
-        audio.currentTime = 0;
         if (i === 0) {
           playOffice()
         } else if (i === 1) {
