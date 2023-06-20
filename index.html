@@ -7,7 +7,7 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 44</p>
+    <p>Prototype 45</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       
@@ -46,7 +46,7 @@
         audioParking.currentTime = 0;
       }
       const next = () => {
-        if (i < images.length) {
+        if (i < images.length - 1) {
            i++;
           image.src = images[i];
           if (i === 0) {
