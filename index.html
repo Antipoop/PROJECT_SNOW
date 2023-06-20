@@ -7,7 +7,7 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 47</p>
+    <p>Prototype 48</p>
     <div id="view">
       <img id="image" src="prototype/1.jpg">
       
@@ -25,16 +25,16 @@
       const audioCorridor = document.getElementById('corridor');
       const audioParking = document.getElementById('parking');
       const playOffice = () => {
+        audioOffice.volume = 0.3
         audioOffice.play()
-        audioOffice.volume = 0.5
       }
       const playCorridor = () => {
+        audioCorridor.volume = 0.3
         audioCorridor.play()
-        audioCorridor.volume = 0.5
       }
       const playParking = () => {
+        audioParking.volume = 0.3
         audioParking.play()
-        audioParking.volume = 0.5
       }
       const stopOffice = () => {
         audioOffice.pause()
