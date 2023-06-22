@@ -7,7 +7,7 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 68</p>
+    <p>Prototype 69</p>
     <div id="view">
       <img id="bg" src="img/background/officeBackground.png">
       
@@ -78,24 +78,24 @@
         if (i !== 0) {
           i--;
           if (i >= 0 && i < 3) {
-            if (i === 3) {
+            if (i === 2) {
               background.src = backgrounds[0];
-              playOffice()
               stopCorridor()
+              playOffice()
             }
             
           } else if (i >= 3 && i < 5) {
-            if (i === 5) {
+            if (i === 4) {
               background.src = backgrounds[1];
-              stopOffice();
+              stopParking();
               playCorridor();
             }
             
           } else if (i >= 5 && i < 7) {
-            if (i === 7) {
-              background.src = backgrounds[2];
-              stopParking()
-              playCorridor()
+            if (i === 6) {
+              background.src = backgrounds[1];
+              playParking()
+              
             }
           }
           } 
