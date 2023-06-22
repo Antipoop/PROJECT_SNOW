@@ -7,9 +7,9 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 66</p>
+    <p>Prototype 67</p>
     <div id="view">
-      <img id="image" src="prototype/1.jpg">
+      <img id="bg" src="img/background/officeBackground.png">
       
       <div class="touch">
         <button class="ex" onclick="ex();">Ex</button>
@@ -19,21 +19,24 @@
     </div>
     <script>
       let i = 0;
-      const image = document.getElementById("image");
-      const images = ['prototype/1.jpg', 'prototype/2.jpg', 'prototype/3.jpg'];
+      const background= document.getElementById("bg");
+      const backgrounds = ['img/background/officeBackground.png', 'img/background/officeBackground2.png', 'img/background/officeBackground3.png']
+      const character = document.getElementById('character')
+      const characters = ['img/character/SnowAnime.png', 'img/character/snowDef.png'];
       const audioOffice = document.getElementById('office');
       const audioCorridor = document.getElementById('corridor');
       const audioParking = document.getElementById('parking');
+      const volume = 0.1
       const playOffice = () => {
-        audioOffice.volume = 0.1
+        audioOffice.volume = volume
         audioOffice.play()
       }
       const playCorridor = () => {
-        audioCorridor.volume = 0.1
+        audioCorridor.volume = volume
         audioCorridor.play()
       }
       const playParking = () => {
-        audioParking.volume = 0.1
+        audioParking.volume = volume
         audioParking.play()
       }
       const stopOffice = () => {
@@ -49,32 +52,51 @@
         audioParking.currentTime = 0;
       }
       const next = () => {
-        if (i < images.length - 1) {
+        if (i < backgrounds.length - 1) {
           i++;
-          image.src = images[i];
-          if (i === 0) {
-            playOffice()
-          } else if (i === 1) {
-            stopOffice()
-            playCorridor()
-          } else if (i === 2) {
-            stopCorridor()
-            playParking()
+          if (i >= 0 && i < 3) {
+            if (i === 0) {
+              background.src = backgrounds[0];
+              playOffice() 
+            }
+          } else if (i >= 3 && i < 5) {
+            if (i === 3) {
+              background.src = backgrounds[1];
+              stopOffice();
+              playCorridor(); 
+            }
+          } else if (i >= 5 && i < 7) {
+            if (i === 5) {
+              background.src = backgrounds[2];
+              stopCorridor();
+              playParking();
+            }
           }
         }
       }
       const ex = () => {
         if (i !== 0) {
           i--;
-          image.src= images[i]
-          if (i === 0) {
-            playOffice()
-            stopCorridor()
-          } else if (i === 1) {
-            stopParking()
-            playCorridor()
-          } else if (i === 2) {
-            playParking()
+          if (i >= 0 && i < 3) {
+            if (i === 3) {
+              background.src = backgrounds[0];
+              playOffice()
+              stopCorridor()
+            }
+            
+          } else if (i >= 3 && i < 5) {
+            if (i === 5) {
+              background.src = backgrounds[1];
+              stopOffice();
+              playCorridor();
+            }
+            
+          } else if (i >= 5 && i < 7) {
+            if (i === 7) {
+              background.src = backgrounds[2];
+              stopParking()
+              playCorridor()
+            }
           }
           } 
       }
