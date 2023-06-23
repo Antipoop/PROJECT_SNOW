@@ -8,4 +8,3 @@ const fullScreen = (element) => {
     }
   }
   const fullScreenGame = document.getElementById('view');
-export { fullScreenGame, fullScreen }
