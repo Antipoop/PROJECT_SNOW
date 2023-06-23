@@ -7,7 +7,7 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p>Prototype 77</p>
+    <p>Prototype 78</p>
     <div id="view">
       <img id="bg" src="img/background/officeBackground.png">
       <img id="character" class="ch" src="img/character/SnowAnime.png">
@@ -120,18 +120,7 @@
           } 
       }
     </script>
-    <script>
-      const fullScreen = (element) => {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if(element.webkitrequestFullscreen) {
-          element.webkitRequestFullscreen();
-        } else if(element.mozRequestFullscreen) {
-          element.mozRequestFullScreen();
-        }
-      }
-      const fullScreenGame = document.getElementById('view');
-    </script>
+    <script src="src/fullscreen.js"></script>
   <style>
     img {
       pointer-events: none;
