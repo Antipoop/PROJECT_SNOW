@@ -37,12 +37,10 @@ const next = () => {
     if (i > 0 && i < 3) {
       if (i === 1) {
         character.src = characters[1];
-      } else if (i === 2) {
-        character.src = characters[0];
-      }
-      if (i === 1) {
         background.src = backgrounds[0];
         playOffice() 
+      } else if (i === 2) {
+        character.src = characters[0];
       }
     } else if (i >= 3 && i < 5) {
       if (i === 3) {
