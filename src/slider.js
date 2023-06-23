@@ -1,4 +1,4 @@
-import char from './character.js';
+import { char } from './character.js';
 
 let i = 0;
 const background= document.getElementById("bg");
@@ -33,7 +33,7 @@ const stopParking = () => {
   audioParking.pause()
   audioParking.currentTime = 0;
 }
-export const next = () => {
+const next = () => {
   if (i < 7) {
     i++;
     char(i);
@@ -51,7 +51,7 @@ export const next = () => {
     }
   }
 }
-export const ex = () => {
+const ex = () => {
   if (i > 1) {
     i--;
     char(i);
