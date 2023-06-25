@@ -1,6 +1,6 @@
 let i = 0;
 const background= document.getElementById("bg");
-const backgrounds = ['img/background/officeBackground.png', 'img/background/officeBackground2.png', 'img/background/officeBackground3.png']
+const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg']
 const character = document.getElementById('character')
 const characters = ['img/character/SnowAnime.png', 'img/character/snowDef.png'];
 const audioOffice = document.getElementById('office');
