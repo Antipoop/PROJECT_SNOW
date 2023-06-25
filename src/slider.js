@@ -8,7 +8,7 @@ const audioCorridor = document.getElementById('corridor');
 const audioParking = document.getElementById('parking');
 const volume = 0.1
 const arr = [0, 1, 0, 1, 1, 0, 1];
-const char = (i) => {
+const charz = (i) => {
   return character.src = characters[arr[i]];
 }
 const playOffice = () => {
@@ -38,7 +38,7 @@ const stopParking = () => {
 const next = () => {
   if (i < 7) {
     i++;
-    char(i);
+    charz(i);
     if (i === 1) {
       background.src = backgrounds[0];
       playOffice() 
@@ -56,7 +56,7 @@ const next = () => {
 const ex = () => {
   if (i > 1) {
     i--;
-    char(i);
+    charz(i);
     if (i === 2) {
       background.src = backgrounds[0];
       stopCorridor();
