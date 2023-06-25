@@ -1,4 +1,4 @@
-import char from './character.js'
+import { char } from './character.js'
 let i = 0;
 const background= document.getElementById("bg");
 const backgrounds = ['img/background/officeBackground.png', 'img/background/officeBackground2.png', 'img/background/officeBackground3.png']
@@ -9,9 +9,6 @@ const audioCorridor = document.getElementById('corridor');
 const audioParking = document.getElementById('parking');
 const volume = 0.1
 const arr = [0, 1, 0, 1, 1, 0, 1];
-const char = (i) => {
-  return character.src = characters[arr[i]];
-}
 const playOffice = () => {
   audioOffice.volume = volume
   audioOffice.play()
