@@ -1,4 +1,4 @@
-import char from 'character.js'
+import char from './character.js'
 let i = 0;
 const background= document.getElementById("bg");
 const backgrounds = ['img/background/officeBackground.png', 'img/background/officeBackground2.png', 'img/background/officeBackground3.png']
