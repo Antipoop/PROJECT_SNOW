@@ -9,7 +9,7 @@ const audioParking = document.getElementById('parking');
 const volume = 0.1
 const arr = [0, 1, 0, 1, 1, 0, 1];
 const charz = (i) => {
-  return character.src = characters[arr[i]];
+  return character.src = characters[arr[i - 1]];
 }
 const playOffice = () => {
   audioOffice.volume = volume
