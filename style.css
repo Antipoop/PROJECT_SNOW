@@ -5,7 +5,12 @@ img {
   }
   .ch {
     position: absolute;
-    top:0;
+    top: 0;
+    right: 0;
+  }
+  .if {
+    position: absolute;
+    top: 0;
     right: 0;
   }
   body {
