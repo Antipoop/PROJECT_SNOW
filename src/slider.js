@@ -1,11 +1,13 @@
 let i = 0;
-const background= document.getElementById("bg");
+const interface = document.getElementById("if") 
+const background = document.getElementById("bg");
 const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg']
 const next = () => {
   if (i < 7) {
     i++;
     char(i);
     if (i === 1) {
+      interface.src = 'img/interface.png';
       background.src = backgrounds[0];
       playOffice() 
     } else if (i === 3) {
