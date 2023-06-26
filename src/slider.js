@@ -1,16 +1,10 @@
 let i = 0;
 const background= document.getElementById("bg");
 const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg']
-const character = document.getElementById('character')
-const characters = ['img/character/SnowAnime.png', 'img/character/snowDef.png'];
 const audioOffice = document.getElementById('office');
 const audioCorridor = document.getElementById('corridor');
 const audioParking = document.getElementById('parking');
 const volume = 0.1
-const arr = [0, 1, 0, 1, 1, 0, 1];
-const charz = (i) => {
-  return character.src = characters[arr[i - 1]];
-}
 const playOffice = () => {
   audioOffice.volume = volume
   audioOffice.play()
@@ -38,14 +32,14 @@ const stopParking = () => {
 const next = () => {
   if (i < 7) {
     i++;
-    charz(i);
+    char(i);
     if (i === 1) {
       background.src = backgrounds[0];
       playOffice() 
     } else if (i === 3) {
       background.src = backgrounds[1];
       stopOffice();
-      playCorridor(); 
+      playCorridor();
     } else if (i === 5) {
       background.src = backgrounds[2];
       stopCorridor();
@@ -56,7 +50,7 @@ const next = () => {
 const ex = () => {
   if (i > 1) {
     i--;
-    charz(i);
+    char(i);
     if (i === 2) {
       background.src = backgrounds[0];
       stopCorridor();
