@@ -46,3 +46,9 @@ img {
     top: 90%;
     width: 100%;
   }
+@font-face {
+  font-family: "Pixel";
+  src: url("./fonts/small_pixel-7.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
