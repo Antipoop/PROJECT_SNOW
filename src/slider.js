@@ -7,7 +7,6 @@ const next = () => {
     i++;
     char(i);
     if (i === 1) {
-      interface.src = 'img/interface.png';
       background.src = backgrounds[0];
       playOffice() 
     } else if (i === 3) {
