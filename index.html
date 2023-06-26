@@ -9,16 +9,19 @@
     <audio id="office" src="media/office.mp3" loop></audio>
     <audio id="corridor" src="media/corridor.mp3" loop></audio>
     <audio id="parking" src="media/parking.mp3" loop></audio>
-    <p class="title">Prototype 101</p>
+    <p class="title">Prototype 102</p>
     <div id="view">
       <img id="bg" src="img/background/title.jpg">
       <img id="character" class="ch">
-      <img id="interface" class="if">
-      <div class="touch">
-        <button class="ex" onclick="ex();">Ex</button>
-        <button class="next" onclick="next();">Next</button>
+      <div class="gradient">
       </div>
-    <button onclick="fullScreen(fullScreenGame)" class="full">FullScreen</button>
+      <div class="touch">
+        <button class="ex" onclick="ex();">&lt;</button>
+        <button class="next" onclick="next();">&gt;</button>
+        <button class="full" onclick="fullScreen(fullScreenGame)">fs</button>
+        <div class="name">
+        </div>
+      </div>
     </div>
     <script src="src/character.js"></script>
     <script src="src/audio.js"></script>
