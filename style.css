@@ -123,3 +123,10 @@ img {
   height: 30%;
   transform: translate(-50%, 0);
 }
+.game {
+  position: absolute;
+  width: 94%;
+  bottom: 4%;
+  height: 27%;
+  left: 3%;
+}
