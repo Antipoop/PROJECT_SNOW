@@ -1,8 +1,9 @@
 let i = 0;
 const background = document.getElementById("bg");
-const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg']
+const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg'];
+const interface = document.getElementById("interface");
 const next = () => {
-  if (i < 7) {
+  if (i < 8) {
     i++;
     char(i);
     if (i === 1) {
@@ -16,6 +17,11 @@ const next = () => {
       background.src = backgrounds[2];
       stopCorridor();
       playParking();
+    } else if (i === 8) {
+      stopParking()
+      background.src = '';
+      character.src = '';
+      interface.remove();
     }
   }
 }
