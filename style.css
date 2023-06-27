@@ -115,9 +115,7 @@ img {
   font-weight: normal;
 }
 .play {
-  border: 0;
-  padding: 0;
-  position: absolute;
-  height: 100%;
-  width: 6%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
