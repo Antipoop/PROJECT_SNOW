@@ -163,3 +163,11 @@ img {
   margin: auto;
   position: relative;
 }
+#slovo {
+  pointer-events: none;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
