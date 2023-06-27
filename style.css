@@ -115,7 +115,11 @@ img {
   font-weight: normal;
 }
 .play {
+  background-color: transparent;
+  width: 20%;
+  top: -55px;
   position: relative;
   left: 50%;
+  height: 30%;
   transform: translate(-50%, 0);
 }
