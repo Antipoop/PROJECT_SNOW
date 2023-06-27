@@ -139,8 +139,11 @@ img {
     height: 27%;
     transform: translate(-53%, 0);
 }
-img {
+#bg {
   pointer-events: none;
   width: 40%;
   height: 15%;
+}
+#gl {
+  pointer-events: none;
 }
