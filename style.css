@@ -132,10 +132,10 @@ img {
 }
 .authors {
   background-color: transparent;
-  width: 20%;
-  top: -55px;
-  position: relative;
-  left: 50%;
-  height: 30%;
-  transform: translate(-50%, 0);
+    width: 19%;
+    top: 20px;
+    position: relative;
+    left: 29%;
+    height: 30%;
+    transform: translate(-50%, 0);
 }
