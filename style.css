@@ -139,3 +139,8 @@ img {
     height: 27%;
     transform: translate(-53%, 0);
 }
+.wr {
+  position: absolute;
+  top: 45%;
+  left: 44%;
+}
