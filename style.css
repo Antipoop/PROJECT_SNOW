@@ -155,8 +155,11 @@ img {
   right: 0;
 }
 #pr {
+  left: -18%;
+  top: -210px;
   pointer-events: none;
   width: 50%;
-  height: 30%;
-  position: absolute;
+  height: 20%;
+  margin: auto;
+  position: relative;
 }
