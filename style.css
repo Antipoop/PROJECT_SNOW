@@ -143,7 +143,14 @@ img {
   pointer-events: none;
   width: 40%;
   height: 15%;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 #gl {
   pointer-events: none;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
