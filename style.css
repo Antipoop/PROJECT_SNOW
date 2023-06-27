@@ -123,3 +123,19 @@ img {
   height: 30%;
   transform: translate(-50%, 0);
 }
+.game {
+  position: absolute;
+  width: 94%;
+  bottom: 4%;
+  height: 27%;
+  left: 3%;
+}
+.authors {
+  background-color: transparent;
+  width: 20%;
+  top: -55px;
+  position: relative;
+  left: 50%;
+  height: 30%;
+  transform: translate(-50%, 0);
+}
