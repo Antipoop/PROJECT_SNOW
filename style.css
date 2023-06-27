@@ -154,3 +154,9 @@ img {
   bottom: 0;
   right: 0;
 }
+#pr {
+  pointer-events: none;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+}
