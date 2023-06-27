@@ -116,11 +116,11 @@ img {
 }
 .play {
   background-color: transparent;
-  width: 20%;
-  top: -55px;
+  width: 18%;
+  top: -54px;
   position: relative;
   left: 50%;
-  height: 30%;
+  height: 28%;
   transform: translate(-50%, 0);
 }
 .game {
@@ -132,10 +132,10 @@ img {
 }
 .authors {
   background-color: transparent;
-    width: 19%;
-    top: 20px;
+    width: 18%;
+    top: 19px;
     position: relative;
-    left: 29%;
-    height: 30%;
-    transform: translate(-50%, 0);
+    left: 32%;
+    height: 27%;
+    transform: translate(-53%, 0);
 }
