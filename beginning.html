@@ -10,10 +10,20 @@
       <img id="bg" src="img/PROJECT SNOW.svg">
       <img id="character" class="ch">
       <div class="gradient">
-      <div class="game">
-        <form action="index.html" target="_blank">
-        <button class="play" onclick="ex();"></button>
-        </form>
-        <button class="authors" onclick="next();"></button>
+      </div>
+      <div class="touch" id="interface">
+        <div class="buttons">
+          <button class="ex" onclick="ex();">&lt;</button>
+          <button class="next" onclick="next();">&gt;</button>
+          <button class="full" onclick="fullScreen(fullScreenGame)">fs</button>
+        </div>
+        <div class="nameDiv">
+          <h1 class="name" id="nameId"></h1>
+        </div>
+        <div class="textDiv">
+          <p id="text"></p>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
