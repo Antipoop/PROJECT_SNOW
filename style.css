@@ -183,3 +183,10 @@ img {
   left: 34%;
   font-size: 55px;
 }
+butt {
+  font-family: 'Pixel';
+  background: black;
+  font-size: 400%;
+  color: white;
+  cursor: pointer;
+}
