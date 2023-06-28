@@ -26,7 +26,7 @@ const next = () => {
     } else if (i === 7) {
       stopParking()
       background.src = 'img/computer/NSA.png';
-      
+      character.style.top = '-100%'
       interface.style.bottom = '-100%';
       gradient.style.bottom = '-100%'
       computer.style.top = '10%'
