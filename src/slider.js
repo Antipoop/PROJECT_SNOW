@@ -5,7 +5,7 @@ const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
 const next = () => {
-  if (i < 8) {
+  if (i < 7) {
     i++;
     char(i);
     if (i === 1) {
@@ -19,7 +19,7 @@ const next = () => {
       background.src = backgrounds[2];
       stopCorridor();
       playParking();
-    } else if (i === 8) {
+    } else if (i === 7) {
       stopParking()
       background.src = 'img/computer/NSA.png';
       character.style = '-100%';
