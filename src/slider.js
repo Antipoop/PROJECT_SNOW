@@ -21,7 +21,7 @@ const next = () => {
       stopParking()
       background.src = '';
       character.src = '';
-      interface.remove();
+      interface.style.top = '-100%';
     }
   }
 }
