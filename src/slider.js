@@ -54,6 +54,7 @@ const ex = () => {
 
 const start = () => {
   i++;
+  char(i);
   interface.style.bottom = '4%';
   character.style.top = '0'
   gradient.style.bottom = '0'
