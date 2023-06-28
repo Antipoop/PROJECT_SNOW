@@ -54,5 +54,10 @@ const ex = () => {
 
 const start = () => {
   i++;
+  interface.style.bottom = '4%';
+  character.style.top = '0'
+  gradient.style.bottom = '0'
+  background.src = backgrounds[0];
+  playOffice()
   startBtn.remove();
 }
