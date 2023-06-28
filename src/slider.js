@@ -4,11 +4,14 @@ const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png',
 const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
+const character = document.getElementById("character")
 const next = () => {
   if (i < 7) {
     i++;
     char(i);
     if (i === 1) {
+      interface.style.bottom = '4%';
+      character.style.top = '0'
       background.src = backgrounds[0];
       playOffice() 
     } else if (i === 3) {
@@ -22,8 +25,8 @@ const next = () => {
     } else if (i === 7) {
       stopParking()
       background.src = 'img/computer/NSA.png';
-      character.style = '-100%';
-      interface.style.top = '-100%';
+      
+      interface.style.bottom = '-100%';
       gradient.style.top = '-100%'
       computer.style.top = '10%'
     }
