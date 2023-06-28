@@ -173,14 +173,18 @@ img {
     border: 0;
     margin: 0;
     padding: 0;
+    position: absolute;
+    left: 103%
   }
   .arrowImg {
     height: 5vh;
     width: 5vh;
+    cursor: pointer;
   }
   .help {
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
   }
 @font-face {
   font-family: "Pixel";
