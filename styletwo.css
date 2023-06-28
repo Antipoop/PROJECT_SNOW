@@ -9,20 +9,99 @@ body {
     height: 100vh;
     position: fixed;
   }
+  p {
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Pixel';
+  }
 img {
+    position: absolute;
     pointer-events: none;
     width: 100%;
     height: 50vh;
 }
 .ter {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 5px;
     width: 40%;
-    height: 40%;
+    height: 60%;
 }
 .glit {
-    margin-top: 80px;  
+    margin-top: 520px;
+    position: absolute;
+    width: 100%;
+    height: 30%;
 }
+.snow {
+    width: 50%;
+    height: 30%;
+    left: 23%;
+    top: 90px;
+}
+p {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 24%;
+    top: 92px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.git {
+    font-size: 30px;
+    top: 92%;
+    left: 30%;
+    bottom: 90%;
+    width: 40%;
+    opacity: .3;
+    height: 20%;
+}
+button 
+  {
+    font-family: 'Pixel';
+    background: black;
+    font-size: 400%;
+    color: white;
+    cursor: pointer;
+    border: solid 3px white;
+  }
+  .buttons {
+    background: black;
+    width: 100%;
+    height: 100%;
+  }
+  .play {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: "Pixel";
+    font-size: 30px;
+    color: white;
+  }
+  .authors {
+    top: 150%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: -100%;
+    font-size: 30px;
+    padding: 0;
+    color: white;
+    font-family: "Pixel";
+  }
+  .touch {
+    position: absolute;
+    width: 15%;
+    bottom: 40%;
+    height: 5%;
+    left: 41%;
+    border: solid 3px white;
+  }
 @font-face {
     font-family: "Pixel";
     src: url("./fonts/small_pixel-7.ttf");
