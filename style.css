@@ -108,9 +108,81 @@ img {
     top: 20%;
     height: 70%;
   }
+  .compText {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 40%;
+    position: absolute;
+    top: -100%;
+  }
+  .bgText {
+    font-family: 'Inter';
+  }
+  .enter {
+    left: 30%;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 90%;
+  }
+  .enter1 {
+    color: white;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    font-family: "Inter";
+  }
+  .login {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    font-size: 200%;
+    background: white;
+  }
+  .flexDiv {
+    flex-direction: row;
+    display: flex;
+  }
+  .password {
+    display: flex;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 5vh;
+    flex-direction: row;
+    font-size: 200%;
+    margin-top: 5%;
+  }
+  .arrow {
+    display: flex;
+    width: 0;
+    background: 0;
+    place-self: flex-end;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .arrowImg {
+    height: 5vh;
+    width: 5vh;
+  }
+  .help {
+    text-align: center;
+    text-decoration: underline;
+  }
 @font-face {
   font-family: "Pixel";
   src: url("./fonts/small_pixel-7.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
   font-style: normal;
   font-weight: normal;
 }
