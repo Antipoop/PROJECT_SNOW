@@ -23,3 +23,9 @@ img {
 .glit {
     margin-top: 80px;  
 }
+@font-face {
+    font-family: "Pixel";
+    src: url("./fonts/small_pixel-7.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
