@@ -20,8 +20,10 @@ const next = () => {
     } else if (i === 8) {
       stopParking()
       background.src = 'img/computer/NSA.png';
-      character.src = '';
+      character.style = '-100%';
       interface.style.top = '-100%';
+      document.getElementById("gd").style.top = '-100%'
+      document.getElementById("computer").style.top = '10%'
     }
   }
 }
