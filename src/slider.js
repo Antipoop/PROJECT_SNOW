@@ -4,7 +4,6 @@ const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png',
 const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
-const character = document.getElementById("character")
 const startBtn = document.getElementById("start")
 const next = () => {
   if (i < 7) {
