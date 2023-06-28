@@ -2,6 +2,8 @@ let i = 0;
 const background = document.getElementById("bg");
 const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg'];
 const interface = document.getElementById("interface");
+const gradient = document.getElementById("gd")
+const computer = document.getElementById("computer")
 const next = () => {
   if (i < 8) {
     i++;
@@ -22,8 +24,8 @@ const next = () => {
       background.src = 'img/computer/NSA.png';
       character.style = '-100%';
       interface.style.top = '-100%';
-      document.getElementById("gd").style.top = '-100%'
-      document.getElementById("computer").style.top = '10%'
+      gradient.style.top = '-100%'
+      computer.style.top = '10%'
     }
   }
 }
