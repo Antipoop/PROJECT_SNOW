@@ -1,3 +1,11 @@
+#start {
+  width: 30%;
+  height: 10%;
+  left: 35%;
+  background: black;
+  position: absolute;
+  bottom: 30%;
+}
 img {
     pointer-events: none;
     width: 100%;
@@ -41,7 +49,7 @@ img {
     width: 100%;
     height: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     background: linear-gradient(0deg, black, transparent);
   }
   .full {
