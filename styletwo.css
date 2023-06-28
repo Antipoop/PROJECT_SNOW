@@ -25,32 +25,32 @@ img {
     margin-top: 10px;
     margin-left: 5px;
     width: 40%;
-    height: 60%;
+    height: 50%;
 }
 .glit {
-    margin-top: 520px;
+    margin-top: 450px;
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 50%;
 }
 .snow {
     width: 50%;
     height: 30%;
     left: 23%;
-    top: 90px;
+    top: 68px;
 }
 p {
     position: absolute;
     width: 50%;
     height: 50%;
     left: 24%;
-    top: 92px;
+    top: 72px;
     font-size: 60px;
     text-align: center;
     letter-spacing: 2px;
 }
 .git {
-    font-size: 30px;
+    font-size: 40px;
     top: 92%;
     left: 30%;
     bottom: 90%;
@@ -79,8 +79,9 @@ button
     height: 100%;
     width: 100%;
     font-family: "Pixel";
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    letter-spacing: 2px;
   }
   .authors {
     top: 150%;
@@ -89,18 +90,22 @@ button
     width: 100%;
     right: 0;
     bottom: -100%;
-    font-size: 30px;
+    font-size: 40px;
     padding: 0;
     color: white;
     font-family: "Pixel";
+    letter-spacing: 2px;
   }
   .touch {
     position: absolute;
     width: 15%;
     bottom: 40%;
-    height: 5%;
-    left: 41%;
+    height: 9%;
+    left: 50%;
     border: solid 3px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 @font-face {
     font-family: "Pixel";
