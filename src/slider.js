@@ -19,7 +19,7 @@ const next = () => {
       playParking();
     } else if (i === 8) {
       stopParking()
-      background.src = '';
+      background.src = 'img/computer/NSA.png';
       character.src = '';
       interface.style.top = '-100%';
     }
