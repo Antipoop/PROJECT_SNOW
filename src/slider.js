@@ -5,6 +5,7 @@ const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
 const character = document.getElementById("character")
+const startBtn = document.getElementById("start")
 const next = () => {
   if (i < 7) {
     i++;
@@ -12,6 +13,7 @@ const next = () => {
     if (i === 1) {
       interface.style.bottom = '4%';
       character.style.top = '0'
+      gradient.style.bottom = '0'
       background.src = backgrounds[0];
       playOffice() 
     } else if (i === 3) {
@@ -27,7 +29,7 @@ const next = () => {
       background.src = 'img/computer/NSA.png';
       
       interface.style.bottom = '-100%';
-      gradient.style.top = '-100%'
+      gradient.style.bottom = '-100%'
       computer.style.top = '10%'
     }
   }
@@ -49,4 +51,9 @@ const ex = () => {
       playParking();
     }
   }
+}
+
+const start = () => {
+  i++;
+  startBtn.remove();
 }
