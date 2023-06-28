@@ -167,7 +167,6 @@ img {
   }
   .arrow {
     display: flex;
-    width: 0;
     background: 0;
     place-self: flex-end;
     border: 0;
