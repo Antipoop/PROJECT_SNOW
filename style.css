@@ -38,6 +38,21 @@ img {
     margin-bottom: 0px;
     font-family: 'Pixel';
   }
+  .arrowr {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: -1%;
+    left: 20%;
+  }
+  .arrowl {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 0%;
+    transform: rotate(180deg);
+    left: 0%;
+  }
   button {
     font-family: 'Pixel';
     background: black;
@@ -53,12 +68,14 @@ img {
     background: linear-gradient(0deg, black, transparent);
   }
   .full {
+    background: transparent;
+    border: none;
     position: absolute;
-    width: 6%;
-    height: 10%;
+    width: 12%;
+    height: 5%;
     right: 0;
     bottom: -10%;
-    font-size: small;
+    font-size: medium;
     padding: 0;
   }
   .ex {
