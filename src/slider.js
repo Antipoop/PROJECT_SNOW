@@ -67,9 +67,9 @@ const start = () => {
 
 const enter = () => {
   if(login.value === '123' && password.value === '321') {
-    background.src = backgrounds[1]
+    computer.style.top = '-100%';
   } else {
     login.style.background = 'lightcoral';
-    password.style.backgrond = 'lightcoral'
+    password.style.background = 'lightcoral'
   }
 }
