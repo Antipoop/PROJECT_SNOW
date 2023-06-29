@@ -34,17 +34,17 @@ img {
   height: 50%;
 }
 .log {
-    width: 50%;
-    height: 30%;
-    left: 23%;
-    top: 9%;
+    width: 42%;
+    height: 11%;
+    left: 28%;
+    top: 19%;
 }
 p {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    left: 24%;
-    top: 10%;
+    width: 55%;
+    height: 7%;
+    left: 22%;
+    top: 11%;
     font-size: 320%;
     letter-spacing: .2rem;
     text-align: center;
@@ -86,7 +86,7 @@ p {
   .touch {
     position: absolute;
     width: 15%;
-    bottom: 40%;
+    bottom: 15%;
     height: 9%;
     left: 43%;
     border: solid 3px white;
@@ -99,4 +99,8 @@ p {
     src: url("./fonts/small_pixel-7.ttf");
     font-style: normal;
     font-weight: normal;
+  }
+  .nik {
+    width: 32%;
+    height: 32%;
   }
