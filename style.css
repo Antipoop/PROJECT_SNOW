@@ -178,19 +178,34 @@ img {
     top: 10%;
     position: absolute;
   }
-  .heartIcon {
-    top: 2%;
+  .heartIconBtn {
+    top: 2vh;
     width: 8vh;
-    height: auto;
+    background: 0;
+    height: 10vh;
     right: 2%;
+    padding: 0;
+    margin: 0;
+    border: 0;
     position: absolute;
   }
-  .backupIcon {
+  .heartIconImg {
+    width: 100%;
+    height: 100%;
+  }
+  .backupIconBtn {
     width: 8vh;
-    height: auto;
+    height: 12vh;
     right: 2%;
     position: absolute;
-    top: 15vh;
+    top: 14vh;
+    padding: 0;
+    background:0;
+    border: 0;
+  }
+  .backupIconImg {
+    width: 100%;
+    height: 100%;
   }
   .shutdown {
     background: 0;
