@@ -109,3 +109,23 @@ p {
     height: 32%;
     left: 25%;
   }
+  .dmi {
+    width: 32%;
+    height: 32%;
+    left: 45%;
+  }
+  .eg {
+    width: 32%;
+    height: 32%;
+    left: 65%;
+  }
+  .rom {
+    width: 32%;
+    height: 32%;
+    left: 85%;
+  }
+  .vic {
+    width: 32%;
+    height: 32%;
+    top: 25%;
+  }
