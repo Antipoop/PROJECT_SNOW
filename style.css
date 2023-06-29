@@ -84,6 +84,13 @@ img {
     left: 3%;
     border: solid 3px white;
   }
+  .lightnings {
+    position: absolute;
+    width: 50%;
+    opacity: 60%;
+    height: 100%;
+    right: 0;
+  }
   .buttons {
     opacity: 0.5;
     background: black;
