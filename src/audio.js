@@ -26,3 +26,4 @@ const stopParking = () => {
   audioParking.pause()
   audioParking.currentTime = 0;
 }
+playOffice()
