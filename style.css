@@ -245,6 +245,13 @@ img {
     text-decoration: underline;
     cursor: pointer;
   }
+  .copy {
+    position: absolute;
+    width: 30%;
+    bottom: -300%;
+    height: 30%;
+    right: 20%;
+  }
 @font-face {
   font-family: "Pixel";
   src: url("./fonts/small_pixel-7.ttf");

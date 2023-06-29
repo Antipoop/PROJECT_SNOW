@@ -8,6 +8,7 @@ const startBtn = document.getElementById("start")
 const login = document.getElementById('login')
 const password = document.getElementById("password")
 const pcinterface = document.getElementById("pcint")
+const copy = document.getElementById("copy")
 const next = () => {
   if (i < 7) {
     i++;
@@ -75,3 +76,7 @@ const enter = () => {
     password.style.background = 'lightcoral'
   }
 }
+
+const copyfile = () => {
+  copy.style.bottom = "30%"
+} 
