@@ -7,6 +7,7 @@ const computer = document.getElementById("computer")
 const startBtn = document.getElementById("start")
 const login = document.getElementById('login')
 const password = document.getElementById("password")
+const pcinterface = document.getElementById("pcint")
 const next = () => {
   if (i < 7) {
     i++;
@@ -66,8 +67,9 @@ const start = () => {
 }
 
 const enter = () => {
-  if(login.value === '123' && password.value === '321') {
+  if (login.value === '123' && password.value === '321') {
     computer.style.top = '-100%';
+    pcinterface.style.bottom = "0"
   } else {
     login.style.background = 'lightcoral';
     password.style.background = 'lightcoral'
