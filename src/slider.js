@@ -5,6 +5,7 @@ const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
 const startBtn = document.getElementById("start")
+const login = document.getElementById('login')
 const next = () => {
   if (i < 7) {
     i++;
@@ -29,7 +30,7 @@ const next = () => {
       character.style.top = '-100%'
       interface.style.bottom = '-100%';
       gradient.style.bottom = '-100%'
-      computer.style.top = '10%'
+      computer.style.top = '10%';
     }
   }
 }
@@ -61,4 +62,10 @@ const start = () => {
   background.src = backgrounds[0];
   playOffice()
   startBtn.remove();
+}
+
+const enter = () => {
+  if(login.value === '123') {
+    background.src = backgrounds[1]
+  }
 }
