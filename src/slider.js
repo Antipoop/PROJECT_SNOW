@@ -1,6 +1,6 @@
 let i = 0;
 const background = document.getElementById("bg");
-const backgrounds = ['img/background/office.jpg', 'img/background/corridor.png', 'img/background/parking.jpg'];
+const backgrounds = ['img/background/army.png', 'img/background/blackvoid.png', 'img/background/hospital.png', 'img/background/nsa_base.png', 'img/background/nsa_base2.png', 'img/background/magazines copy.png'];
 const interface = document.getElementById("interface");
 const gradient = document.getElementById("gd")
 const computer = document.getElementById("computer")
@@ -17,23 +17,29 @@ const next = () => {
       interface.style.bottom = '4%';
       character.style.top = '0'
       gradient.style.bottom = '0'
-      background.src = backgrounds[0];
-      playOffice() 
-    } else if (i === 3) {
       background.src = backgrounds[1];
-      stopOffice();
-      playCorridor();
-    } else if (i === 5) {
-      background.src = backgrounds[2];
-      stopCorridor();
-      playParking();
+    } else if (i === 2) {
+      background.src = backgrounds[0];
     } else if (i === 7) {
-      stopParking()
+      background.src = backgrounds[2];
+    } else if (i === 12) {
+      background.src = backgrounds[1];
+    } else if (i === 15) {
+      background.src = backgrounds[3];
+    } else if (i === 28) {
+      background.src = backgrounds[1];
+    } else if (i === 36) {
+      background.src = backgrounds[4];
+    } else if (i === 50) {
       background.src = 'img/computer/NSA.png';
       character.style.top = '-100%'
       interface.style.bottom = '-100%';
       gradient.style.bottom = '-100%'
       computer.style.top = '10%';
+    } else if (i === 53) {
+      background.src = backgrounds[1];
+    } else if (i === 55) {
+      background.src = backgrounds[1];
     }
   }
 }
@@ -86,18 +92,14 @@ const m2 = document.getElementById('m2')
 const m3 = document.getElementById('m3')
 
 const minigame = () => {
-  pcinterface.style.bottom = '-1000%';
-  copy.style.bottom = '30%';
-  m1.style.top = '20%';
-  m2.style.top = '60%';
-  m2.style.left = '120vh';
-  m3.style.top = '50%';
-  m3.style.left = '20vh';
+  i++;
+  interface.style.bottom = '4%';
+  character.style.top = '0';
+  gradient.style.bottom = '0'
+  char(i);
+  background.src = backgrounds[4];
 }
 
-const krug1 = document.getElementById("krug1");
-const krug2 = document.getElementById('krug2');
-const krug3 = document.getElementById('krug3')
 
 const mini1 = () => {
   let start = Date.now();
