@@ -77,11 +77,12 @@ const enter = () => {
   }
 }
 
-const minigame1 = document.getElementsByClassName('minigame1')
+const fullm = document.getElementById('fullm')
+
 
 const copyfile = () => {
   copy.style.bottom = "30%"
-  minigame1.style.top = "50%"
+  fullm.style.top = "0"
 }
 
 const krug1 = document.getElementsByClassName("krug1")
