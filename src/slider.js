@@ -81,9 +81,18 @@ const backupdiv = document.getElementById('backupdiv')
 const copys = () => {
   backupdiv.style.bottom = '40vh'
 }
+const m1 = document.getElementById('m1');
+const m2 = document.getElementById('m2')
+const m3 = document.getElementById('m3')
+
 const minigame = () => {
   pcinterface.style.bottom = '-1000%'
-  copy.style.bottom = '30%'
+  copy.style.bottom = '30%';
+  m1.style.top = '20%'
+  m2.style.top = '60%'
+  m2.style.left = '120vh'
+  m3.style.top = '50%'
+  m3.style.left = '20vh'
 }
 
 const krug1 = document.getElementById("krug1");
