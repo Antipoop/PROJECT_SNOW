@@ -52,7 +52,7 @@ p {
   .git {
     font-size: 250%;
     top: 92%;
-    left: 31%;
+    left: 33%;
     bottom: 90%;
     width: 40%;
     opacity: .3;
@@ -85,9 +85,9 @@ p {
   }
   .touch {
     position: absolute;
-    width: 25%;
+    width: 20%;
     bottom: 12%;
-    height: 15%;
+    height: 7%;
     left: 43%;
     border: solid 3px white;
     display: flex;
