@@ -252,6 +252,27 @@ img {
     height: 30%;
     right: 20%;
   }
+  .minigame1 {
+    width: 22vh;
+    height: 11vh;
+    margin: 0;
+    top: 50vh;
+    left: 70vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .krug1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  .krug2 {
+    width: 70%;
+    position: absolute;
+    height: auto;
+  }
 @font-face {
   font-family: "Pixel";
   src: url("./fonts/small_pixel-7.ttf");
