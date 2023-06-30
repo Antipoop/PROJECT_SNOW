@@ -115,11 +115,11 @@ img {
   }
   .lightnings {
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 0;
-    right: 0
-  }
+    right: 7%;
+}
   .buttons {
     opacity: 0.5;
     background: black;
