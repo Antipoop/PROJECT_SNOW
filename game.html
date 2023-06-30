@@ -38,11 +38,24 @@
         <button class="heartIconBtn">
           <img class="heartIconImg" src="img/computer/heartbeatIcon.png">
         </button>
-        <button class="backupIconBtn" onclick="copyfile(); mini1()">
+        <button class="backupIconBtn" onclick="copys()">
           <img class="backupIconImg" src="img/computer/backupIcon.png">
         </button>
         <img class="heartbeat" src="img/computer/heartbeatApp.png">
-        <img class="copy" id="copy" src="img/computer/copyingFiles_staticText.png">
+        <div class="BackupDiv" id="backupdiv">
+          <img class="backupapp" id="backupid" style="height: auto;" src="img/computer/backupApp.png">
+          <button style="
+            background: forestgreen;
+            width: 50%;
+            height: 12%;
+            font-size: unset;
+            left: 25%;
+            position: absolute;
+            bottom: 8%;
+            font-family: Inter;
+        " onclick="minigame()">Backup</button>
+        </div>
+        
         <div id="fullm">
           <div class="minigame1" id="m1">
             <img class="krug1" id="krug1" src="img/computer/bubbleHint.png">
@@ -60,16 +73,9 @@
             <img class="krug1" id="krug1" src="img/computer/bubbleHint.png">
             <img class="krug2" src="img/computer/bubbleClick.png">
           </div>
-          <div class="minigame1" id="m5">
-            <img class="krug1" id="krug1" src="img/computer/bubbleHint.png">
-            <img class="krug2" src="img/computer/bubbleClick.png">
-          </div>
-          <div class="minigame1" id="m6">
-            <img class="krug1" id="krug1" src="img/computer/bubbleHint.png">
-            <img class="krug2" src="img/computer/bubbleClick.png">
         </div>
         </div>
-        
+        <img class="copy" id="copy" src="img/computer/copyingFiles_staticText.png">
         
       </div>
       <div class="compText" id="computer">
