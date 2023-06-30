@@ -85,9 +85,9 @@ p {
   }
   .touch {
     position: absolute;
-    width: 15%;
+    width: 25%;
     bottom: 12%;
-    height: 7%;
+    height: 15%;
     left: 43%;
     border: solid 3px white;
     display: flex;
