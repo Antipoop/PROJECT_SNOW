@@ -79,4 +79,18 @@ const enter = () => {
 
 const copyfile = () => {
   copy.style.bottom = "30%"
-} 
+}
+
+
+const mini1 = () => {
+  let start = Date.now();
+
+  let timer = setInterval(function() {
+    let timePassed = Date.now() - start;
+
+    copy.style.bottom = timePassed / 5 + '%';
+
+    if (timePassed > 4000) clearInterval(timer);
+
+  }, 20);
+}
