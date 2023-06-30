@@ -77,7 +77,7 @@ const start = () => {
 }
 
 const enter = () => {
-  if (login.value === 'EDSNOWDAN' && password.value === 'EDSNOWDAN') {
+  if (login.value === 'EDSNOWDEN' && password.value === 'EDSNOWDEN') {
     computer.style.top = '-100%';
     pcinterface.style.bottom = "0"
   } else {
