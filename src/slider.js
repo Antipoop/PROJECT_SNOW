@@ -18,14 +18,17 @@ const next = () => {
       character.style.top = '0'
       gradient.style.bottom = '0'
       background.src = backgrounds[1];
+      playParking()
     } else if (i === 2) {
       background.src = backgrounds[0];
     } else if (i === 7) {
       background.src = backgrounds[2];
     } else if (i === 12) {
       background.src = backgrounds[1];
+      stopParking()
     } else if (i === 15) {
       background.src = backgrounds[3];
+      playCorridor()
     } else if (i === 28) {
       background.src = backgrounds[1];
     } else if (i === 36) {
@@ -39,7 +42,7 @@ const next = () => {
     } else if (i === 53) {
       background.src = backgrounds[1];
     } else if (i === 55) {
-      background.src = backgrounds[1];
+      background.src = backgrounds[5];
     }
   }
 }
@@ -74,7 +77,7 @@ const start = () => {
 }
 
 const enter = () => {
-  if (login.value === '123' && password.value === '321') {
+  if (login.value === 'EDSNOWDAN' && password.value === 'EDSNOWDAN') {
     computer.style.top = '-100%';
     pcinterface.style.bottom = "0"
   } else {
@@ -98,6 +101,7 @@ const minigame = () => {
   gradient.style.bottom = '0'
   char(i);
   background.src = backgrounds[4];
+  pcinterface.style.bottom = '-100%'
 }
 
 
