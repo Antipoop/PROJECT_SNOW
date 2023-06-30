@@ -38,6 +38,17 @@ img {
     margin-bottom: 0px;
     font-family: 'Pixel';
   }
+  .github {
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 12%;
+    height: 5%;
+    right: 7%;
+    bottom: -10%;
+    font-size: medium;
+    padding: 0;
+}
   .arrowr {
     position: absolute;
     height: 100%;
@@ -53,17 +64,7 @@ img {
     transform: rotate(180deg);
     left: 0%;
   }
-  .github {
-    background: transparent;
-    border: none;
-    position: absolute;
-    width: 12%;
-    height: 5%;
-    right: 7%;
-    bottom: -10%;
-    font-size: medium;
-    padding: 0;
-}
+
   button {
     font-family: 'Pixel';
     background: black;
