@@ -89,7 +89,7 @@ const mini1 = () => {
   let timer = setInterval(function() {
     let timePassed = Date.now() - start;
 
-    krug1.style.width = - timePassed/10 + 'px';
+    krug1.style.width = 100 - timePassed/100 + '%';
 
     if (timePassed > 2000) clearInterval(timer);
 
