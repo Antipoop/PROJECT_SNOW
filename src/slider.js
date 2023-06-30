@@ -10,7 +10,7 @@ const password = document.getElementById("password")
 const pcinterface = document.getElementById("pcint")
 const copy = document.getElementById("copy")
 const next = () => {
-  if (i < 7) {
+  if (i < 55) {
     i++;
     char(i);
     if (i === 1) {
