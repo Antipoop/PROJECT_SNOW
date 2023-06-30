@@ -81,6 +81,7 @@ const copyfile = () => {
   copy.style.bottom = "30%"
 }
 
+const krug1 = document.getElementById("krug1")
 
 const mini1 = () => {
   let start = Date.now();
@@ -88,9 +89,9 @@ const mini1 = () => {
   let timer = setInterval(function() {
     let timePassed = Date.now() - start;
 
-    copy.style.bottom = timePassed / 5 + '%';
+    krug1.style.width = - timePassed/10 + 'px';
 
-    if (timePassed > 4000) clearInterval(timer);
+    if (timePassed > 2000) clearInterval(timer);
 
-  }, 20);
+  }, 2);
 }
