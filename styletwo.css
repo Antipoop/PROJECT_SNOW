@@ -49,15 +49,6 @@ p {
   letter-spacing: .2rem;
   text-align: center;
 }
-.git {
-  font-size: 250%;
-  top: 92%;
-  left: 31%;
-  bottom: 90%;
-  width: 40%;
-  opacity: .3;
-  height: 20%;
-}
 button 
   {
     font-family: 'Pixel';
@@ -99,8 +90,8 @@ button
   .touch {
     position: absolute;
     width: 15%;
-    bottom: 40%;
-    height: 9%;
+    bottom: 36%;
+    height: 7%;
     left: 43%;
     border: solid 3px white;
     display: flex;
@@ -113,3 +104,5 @@ button
     font-style: normal;
     font-weight: normal;
   }
+ 
+
