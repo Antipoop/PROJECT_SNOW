@@ -81,7 +81,7 @@ const minigame1 = document.getElementsByClassName('minigame1')
 
 const copyfile = () => {
   copy.style.bottom = "30%"
-  minigame1.style.top = '50%'
+  minigame1.style.top = "50%"
 }
 
 const krug1 = document.getElementsByClassName("krug1")
