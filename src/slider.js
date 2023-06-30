@@ -29,19 +29,19 @@ const next = () => {
     } else if (i === 15) {
       background.src = backgrounds[3];
       playCorridor()
-    } else if (i === 28) {
+    } else if (i === 27) {
       background.src = backgrounds[1];
-    } else if (i === 36) {
+    } else if (i === 35) {
       background.src = backgrounds[4];
-    } else if (i === 50) {
+    } else if (i === 48) {
       background.src = 'img/computer/NSA.png';
       character.style.top = '-100%'
       interface.style.bottom = '-100%';
       gradient.style.bottom = '-100%'
       computer.style.top = '10%';
-    } else if (i === 53) {
+    } else if (i === 50) {
       background.src = backgrounds[1];
-    } else if (i === 55) {
+    } else if (i === 52) {
       background.src = backgrounds[5];
     }
   }
