@@ -305,6 +305,28 @@ img {
     align-items: center;
     justify-content: center;
   }
+  .minigame2 {
+    width: 22vh;
+    height: 11vh;
+    margin: 0;
+    top: -150%;
+    left: 70vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .minigame3 {
+    width: 22vh;
+    height: 11vh;
+    margin: 0;
+    top: -150%;
+    left: 70vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
   .krug1 {
     position: absolute;
     width: 100%;

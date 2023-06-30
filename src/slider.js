@@ -86,7 +86,9 @@ const minigame = () => {
   copy.style.bottom = '30%'
 }
 
-const krug1 = document.getElementsByClassName("krug1")
+const krug1 = document.getElementById("krug1");
+const krug2 = document.getElementById('krug2');
+const krug3 = document.getElementById('krug3')
 
 const mini1 = () => {
   let start = Date.now();
@@ -95,6 +97,8 @@ const mini1 = () => {
     let timePassed = Date.now() - start;
 
     krug1.style.width = 100 - timePassed/100 + '%';
+    krug2.style.width = 100 - timePassed/100 + '%';
+    krug3.style.width = 100 - timePassed/100 + '%';
 
     if (timePassed > 3000) clearInterval(timer);
 
