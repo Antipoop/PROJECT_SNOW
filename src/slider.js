@@ -79,6 +79,7 @@ const enter = () => {
 
 const copyfile = () => {
   copy.style.bottom = "30%"
+  document.getElementsByClassName("minigame1").style.top = '50vh'
 }
 
 const krug1 = document.getElementById("krug1")
