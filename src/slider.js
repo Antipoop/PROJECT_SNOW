@@ -91,7 +91,7 @@ const mini1 = () => {
 
     krug1.style.width = 100 - timePassed/100 + '%';
 
-    if (timePassed > 2000) clearInterval(timer);
+    if (timePassed > 2500) clearInterval(timer);
 
   }, 2);
 }
