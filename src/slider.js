@@ -77,12 +77,14 @@ const enter = () => {
   }
 }
 
+const minigame1 = document.getElementsByClassName('minigame1')
+
 const copyfile = () => {
   copy.style.bottom = "30%"
   document.getElementsByClassName("minigame1").style.top = '50vh'
 }
 
-const krug1 = document.getElementById("krug1")
+const krug1 = document.getElementsByClassName("krug1")
 
 const mini1 = () => {
   let start = Date.now();
