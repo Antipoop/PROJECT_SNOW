@@ -86,8 +86,8 @@ p {
   .touch {
     position: absolute;
     width: 15%;
-    bottom: 15%;
-    height: 9%;
+    bottom: 12%;
+    height: 7%;
     left: 43%;
     border: solid 3px white;
     display: flex;
@@ -101,31 +101,39 @@ p {
     font-weight: normal;
   }
   .nik {
-    width: 32%;
-    height: 32%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 19vh;
   }
   .ksy {
-    width: 32%;
-    height: 32%;
-    left: 25%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 46.25vh;
   }
   .dmi {
-    width: 32%;
-    height: 32%;
-    left: 45%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 74.5vh;
   }
   .eg {
-    width: 32%;
-    height: 32%;
-    left: 65%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 101.75vh;
   }
   .rom {
-    width: 32%;
-    height: 32%;
-    left: 85%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 130vh;
   }
   .vic {
-    width: 32%;
-    height: 32%;
-    top: 25%;
+    width: 16%;
+    height: 40%;
+    bottom: 24%;
+    left: 156vh;
+
   }
