@@ -136,3 +136,82 @@ p {
     bottom: 24%;
     left: 156vh;
   }
+  .knop {
+    background-color: transparent;
+  }
+  .nikita {
+    width: 30%;
+    height: 45%;
+    bottom: 56%;
+    top: 30%;
+    left: 13vh;
+    position: absolute;
+  }
+  .ksyusha {
+    width: 30%;
+    position: absolute;
+    height: 45%;
+    bottom: 40%;
+    top: 30%;
+    left: 39.25vh;
+  }
+  .dumka {
+    width: 30%;
+    position: absolute;
+    height: 45%;
+    bottom: 40%;
+    top: 30%;
+    left: 70vh;
+  }
+  .egor {
+    width: 30%;
+    position: absolute;
+    height: 45%;
+    bottom: 40%;
+    top: 30%;
+    left: 96vh;
+  }
+  .romka {
+    width: 30%;
+    position: absolute;
+    height: 45%;
+    bottom: 40%;
+    top: 30%;
+    left: 123vh;
+  }
+  .viktor {
+    width: 30%;
+    position: absolute;
+    height: 45%;
+    bottom: 40%;
+    top: 30%;
+    left: 151vh;
+  }
+  .button #knop {
+    background-color: transparent;
+    border: none;
+  }
+  #n {
+    background-color: transparent;
+    border: none;
+  }
+  #x {
+    background-color: transparent;
+    border: none;
+  }
+  #d {
+    background-color: transparent;
+    border: none;
+  }
+  #e {
+    background-color: transparent;
+    border: none;
+  }
+  #r {
+    background-color: transparent;
+    border: none;
+  }
+  #v {
+    background-color: transparent;
+    border: none;
+  }
