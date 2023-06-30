@@ -215,7 +215,7 @@ p {
     height: 45%;
     bottom: 40%;
     top: 30%;
-    left: 39.25vh;
+    left: 12vh;
   }
   #d {
     background-color: transparent;
@@ -225,7 +225,7 @@ p {
     height: 45%;
     bottom: 40%;
     top: 30%;
-    left: 70vh;
+    left: 40vh;
   }
   #e {
     background-color: transparent;
@@ -245,7 +245,7 @@ p {
     height: 45%;
     bottom: 40%;
     top: 30%;
-    left: 123vh;
+    left: 163vh;
   }
   #v {
     background-color: transparent;
@@ -255,5 +255,5 @@ p {
     height: 45%;
     bottom: 40%;
     top: 30%;
-    left: 151vh;
+    left: 191vh;
   }
