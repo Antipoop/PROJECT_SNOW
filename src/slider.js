@@ -77,12 +77,13 @@ const enter = () => {
   }
 }
 
-const fullm = document.getElementById('fullm')
-
-
-const copyfile = () => {
-  copy.style.bottom = "30%"
-  fullm.style.top = "0"
+const backupdiv = document.getElementById('backupdiv')
+const copys = () => {
+  backupdiv.style.bottom = '40vh'
+}
+const minigame = () => {
+  pcinterface.style.bottom = '-1000%'
+  copy.style.bottom = '30%'
 }
 
 const krug1 = document.getElementsByClassName("krug1")
