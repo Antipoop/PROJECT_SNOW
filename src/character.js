@@ -1,5 +1,5 @@
 const character = document.getElementById('character');
-const characters = [' ', 'img/character/ben.png', 'img/character/doctor.png', 'img/character/security.png'];
+const characters = [' ', ' ', 'img/character/ben.png', 'img/character/doctor.png', 'img/character/security.png'];
 const text = [
   'Все началось в 2004 году',
   '...',
@@ -54,7 +54,7 @@ const text = [
   '...',
   '6 Июня 2013г. мир стал чуточку честнее'
 ];
-const names = ['Мысли', 'Сноу', 'Бен', 'Доктор', 'Охранник'];
+const names = ['Мысли', 'Сноу', 'Доктор', 'Бен', 'Охранник'];
 const arr = [0, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 0, 0, 0, 0, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 0, 1, 2, 1, 2, 2, 1, 2, 0, 0, 4, 1, 4, 0, 0, 0];
 const char = (i) => {
   document.getElementById('text').innerText = text[i - 1];
