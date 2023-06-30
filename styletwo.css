@@ -51,11 +51,17 @@ p {
 }
 .git {
   font-size: 250%;
-    left: -20%;
-    bottom: 80%;
-    width: 120%;
+    top: 92%;
+    left: 31%;
+    bottom: 90%;
+    width: 40%;
     opacity: .3;
-    height: 80%;
+    height: 20%;
+    position: absolute;
+    top: 22%;
+    left: -8%;
+    width: 120%;
+    height: 50%;
 }
 button 
   {
@@ -120,10 +126,10 @@ button
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 89%;
-    left: 43%;
-    width: 20%;
-    height: 10%;
+    top: 22%;
+    left: -1%;
+    width: 110%;
+    height: 50%;
 }
 .anti {
   background-color: transparent;
@@ -139,7 +145,7 @@ button
   border: none;
   position: absolute;
   top: 89%;
-  left: 43%;
+  left: 41%;
   width: 20%;
   height: 10%;
 }
