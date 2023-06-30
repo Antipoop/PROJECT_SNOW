@@ -51,12 +51,11 @@ p {
 }
 .git {
   font-size: 250%;
-  top: 92%;
-  left: 31%;
-  bottom: 90%;
-  width: 40%;
-  opacity: .3;
-  height: 20%;
+    left: -20%;
+    bottom: 80%;
+    width: 120%;
+    opacity: .3;
+    height: 80%;
 }
 button 
   {
