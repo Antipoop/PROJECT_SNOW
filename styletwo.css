@@ -113,6 +113,10 @@ button
     font-style: normal;
     font-weight: normal;
   }
+  .button #knop {
+    background-color: transparent;
+    border: none;
+  }
   #a {
     background-color: transparent;
     border: none;
