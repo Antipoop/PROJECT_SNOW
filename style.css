@@ -256,7 +256,7 @@ img {
     width: 22vh;
     height: 11vh;
     margin: 0;
-    top: -150vh;
+    top: -150%;
     left: 70vh;
     display: flex;
     position: absolute;
